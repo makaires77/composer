@@ -53,23 +53,23 @@ Para manter as modificações locais, mas eliminar o histórico de pull requests
 
 Adicione todos os arquivos do seu projeto ao staging area:
     
-    ```bash
-    git add .
-    ```
+```bash
+git add .
+```
 
 Faça um commit inicial para registrar o estado atual do seu projeto:
 
-    ```bash
-    git commit -m "Estrutura de pastas do projeto"
-    ```
+```bash
+git commit -m "Estrutura de pastas do projeto"
+```
 
 5. Adicionar o seu repositório como origem (origin):
 
 Adicione o seu novo repositório como a origem remota:
 
-    ```bash
-    git remote add origin <URL_DO_SEU_REPOSITÓRIO>
-    ```
+```bash
+git remote add origin <URL_DO_SEU_REPOSITÓRIO>
+```
 
 Substitua <URL_DO_SEU_REPOSITÓRIO> pela URL do repositório que você criou no GitHub.
 
@@ -77,15 +77,15 @@ Substitua <URL_DO_SEU_REPOSITÓRIO> pela URL do repositório que você criou no 
 
 Envie (push) as alterações para o seu repositório no GitHub:
 
-    ```bash
-    git push -u origin main
-    ```
+```bash
+git push -u origin main
+```
 
 A opção -u configura o seu branch local main para rastrear o branch remoto origin/main, facilitando futuros pushs e pulls.
 
 Após seguir esses passos:
     Você terá um novo repositório Git na sua pasta local, com um histórico de commits limpo, contendo apenas as suas modificações.
     
-    O novo repositório estará conectado ao seu repositório no GitHub, permitindo que você faça push e pull das suas alterações.
+O novo repositório estará conectado ao seu repositório no GitHub, permitindo que você faça push e pull das suas alterações.
     
-    Todo o histórico de pull requests e commits relacionados ao repositório original DevSkillsHQ/fullstack-boilerplate-flask-react será eliminado.
+Todo o histórico de pull requests e commits relacionados ao repositório original DevSkillsHQ/fullstack-boilerplate-flask-react será eliminado.
