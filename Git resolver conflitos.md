@@ -2,16 +2,19 @@
 Para adicionar a pasta env_mus ao .gitignore, siga estes passos:
 
 Localize o arquivo .gitignore:
-O arquivo .gitignore geralmente está localizado na raiz do seu projeto. Se você estiver usando o boilerplate que mencionou anteriormente, ele deve estar na pasta encantar.
+
+O arquivo .gitignore geralmente na raiz do seu projeto. 
+
 Abra o arquivo .gitignore em um editor de texto:
+
 Utilize seu editor de texto favorito (VS Code, Sublime Text, etc.) para abrir o arquivo .gitignore.
-Adicione a pasta env_mus:
-Insira a seguinte linha no arquivo .gitignore:
+
+Adicione a pasta env_mus à lista de ignorar, inserindo a seguinte linha no arquivo .gitignore:
+```
 env_mus/
+```
 
-Certifique-se de que não há espaços em branco antes ou depois da barra (/) no final da linha.
-
-Salve o arquivo .gitignore
+Certifique-se de que não há espaços em branco antes ou depois da barra (/) no final da linha e salve o arquivo .gitignore
 
 # Verificar para onde os commits estão apontando:
 Para enxergar para onde os commits estão apontando no momento, você pode usar o comando git remote -v no seu terminal, dentro da pasta do seu projeto.
@@ -25,6 +28,7 @@ origin: É o nome padrão dado ao repositório remoto principal.
 Interpretando a saída:
 
 Se a URL exibida corresponder à URL do seu novo repositório no GitHub, significa que seus commits estão apontando para o repositório correto.
+
 Se a URL exibida ainda for a do repositório original DevSkillsHQ/fullstack-boilerplate-flask-react, significa que você ainda não desconectou seu repositório local do repositório original e precisa seguir os passos que descrevi anteriormente para criar um novo repositório e configurar a nova origem remota.
 
 # Reiniciar o controle de versão escolhendo um novo repositório
@@ -88,4 +92,4 @@ Após seguir esses passos:
     
 O novo repositório estará conectado ao seu repositório no GitHub, permitindo que você faça push e pull das suas alterações.
     
-Todo o histórico de pull requests e commits relacionados ao repositório original DevSkillsHQ/fullstack-boilerplate-flask-react será eliminado.
+Todo o histórico de pull requests e commits relacionados ao repositório original será eliminado.
