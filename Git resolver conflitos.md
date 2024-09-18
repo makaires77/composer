@@ -8,42 +8,33 @@ Para corrigir isso, você precisa desconectar seu repositório local do reposit�
 ## Reiniciar o controle de versão escolhendo um novo repositório
 Para manter as modificações locais, mas eliminar o histórico de pull requests e commits relacionados ao repositório original DevSkillsHQ/fullstack-boilerplate-flask-react, você pode seguir estes passos:
 
-1. Criar um novo repositório no GitHub:
-    Acesse o GitHub e crie um novo repositório vazio para o seu projeto e copie a URL do novo repositório criado mostrado na barra de endereços do browser.
+1. Para criar um novo repositório, acesse o GitHub e crie um repositório vazio para o seu projeto, copie a URL do novo repositório com conteúdo mostrado na barra de endereços do browser.
 
-2. Remover a conexão com o repositório original:
-    No terminal, dentro da pasta do seu projeto (encantar), execute o seguinte comando:
+2. Para remover a conexão com o repositório original, no terminal, estando dentro da pasta raiz, execute o seguinte comando:
 
     ```bash
     git remote remove origin
     ```
 
-    Isso remove a conexão com o repositório original do boilerplate.
-
-3. Inicializar um novo repositório Git:
-    Inicialize um novo repositório Git na sua pasta local:
+3. Para inicializar um novo repositório Git na sua pasta local, execute no terminal:
 
     ```bash
     git init
     ```
 
-4. Adicionar e commitar suas alterações:
-
-Adicione todos os arquivos do seu projeto ao staging area:
+4. Para adicionar e commitar suas alterações, adicione todos os arquivos do seu projeto ao staging area com o comando:
     
 ```bash
 git add .
 ```
 
-Faça um commit inicial para registrar o estado atual do seu projeto:
+Agora faça um commit inicial para registrar o estado atual do seu projeto:
 
 ```bash
 git commit -m "Estrutura de pastas do projeto"
 ```
 
-5. Adicionar o seu repositório como origem (origin):
-
-Adicione o seu novo repositório como a origem remota:
+5. Para adicionar o seu repositório como origem (origin) execute o comando:
 
 ```bash
 git remote add origin <URL_DO_SEU_REPOSITÓRIO>
