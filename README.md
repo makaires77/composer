@@ -1,4 +1,4 @@
-# Fullstack Boilerplate Flask/React
+# Utilizando um template Fullstack para Flask/React
 
 A backbone for your coding challenge.
 
