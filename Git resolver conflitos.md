@@ -13,11 +13,14 @@ Para enxergar para onde os commits estão apontando no momento, você pode usar 
 
 Este comando listará todos os repositórios remotos configurados no seu projeto, juntamente com as URLs associadas a eles. A saída geralmente se parece com isso:
 
+```
 origin  <URL_DO_SEU_REPOSITÓRIO> (fetch)
 origin  <URL_DO_SEU_REPOSITÓRIO> (push)
+```
+
 origin: É o nome padrão dado ao repositório remoto principal.
+
 <URL_DO_SEU_REPOSITÓRIO>: É a URL do repositório remoto para o qual seus commits serão enviados (push) e de onde você buscará atualizações (fetch).
-Interpretando a saída:
 
 Se a URL exibida corresponder à URL do seu novo repositório no GitHub, significa que seus commits estão apontando para o repositório correto.
 
