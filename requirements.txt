@@ -1,0 +1,16 @@
+# Dependências do Backend (Flask)
+Flask
+# ... outras dependências do boilerplate (se houver) ...
+
+# Dependências para o seu módulo de geração de melodias
+mingus
+lilypond
+matplotlib
+fluidsynth
+pyfluidsynth
+
+# Dependências para análise de áudio (se aplicável)
+librosa
+
+# Dependências para interação com o Neo4j (se aplicável)
+py2neo

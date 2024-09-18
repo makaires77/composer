@@ -1,0 +1,45 @@
+version: '3'
+services:
+  neo4j:
+    image: neo4j:latest  # Ou a versão específica que você deseja usar
+    ports:
+      - 7474:7474  # Interface web do Neo4j
+      - 7687:7687  # Porta Bolt para conexão do seu código Python
+    environment:
+      - NEO4J_AUTH=neo4j/${SENHA_DO_NEO4J}  # Usa a variável de ambiente do .env
+    volumes:
+      - ./neo4j_data:/data  # Persistir os dados do Neo4j
+
+  ollama:
+    image: ghcr.io/ollama/ollama:latest
+    ports:
+      - 11434:11434  # Porta para acessar a API do Ollama
+    volumes:
+      - ./models:/models  # Pasta onde os modelos do Ollama serão armazenados
+
+  backend:
+    build: .  # Constrói a imagem do backend a partir do Dockerfile
+    ports:
+      - 8504:8504  # Porta para acessar a API do backend Flask
+    volumes:
+      - .:/app  # Mapeia o diretório atual para o diretório /app no container
+    environment:
+      - OLLAMA_HOST=ollama  # Nome do serviço Ollama para o backend se conectar
+      - OLLAMA_PORT=11434
+      - NEO4J_URI=bolt://neo4j:7687  # URI do Neo4j para o backend se conectar
+      - NEO4J_USERNAME=neo4j
+      - NEO4J_PASSWORD=${SENHA_DO_NEO4J}  # Usa a variável de ambiente do .env
+    depends_on:
+      - ollama
+      - neo4j
+
+  frontend:
+    build: frontend  # Constrói a imagem do frontend a partir do diretório 'frontend'
+    ports:
+      - 3000:3000  # Porta para acessar a aplicação React
+    volumes:
+      - ./frontend:/app  # Mapeia o diretório 'frontend' para o diretório /app no container
+    environment:
+      - REACT_APP_API_URL=http://localhost:8504  # URL da API do backend para o frontend se conectar
+    depends_on:
+      - backend

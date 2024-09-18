@@ -1,0 +1,13 @@
+node_modules/
+cypress/plugins
+cypress/support
+cypress/screenshots
+cypress/videos
+env_mus/
+
+# macOS
+.DS_Store
+
+.idea
+
+app-flask/__pycache__/
