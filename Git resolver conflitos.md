@@ -1,15 +1,7 @@
 # Excluir pasta do controle de versão do Git
 Para adicionar a pasta env_mus ao .gitignore, siga estes passos:
 
-Localize o arquivo .gitignore:
-
-O arquivo .gitignore geralmente na raiz do seu projeto. 
-
-Abra o arquivo .gitignore em um editor de texto:
-
-Utilize seu editor de texto favorito (VS Code, Sublime Text, etc.) para abrir o arquivo .gitignore.
-
-Adicione a pasta env_mus à lista de ignorar, inserindo a seguinte linha no arquivo .gitignore:
+Localize o arquivo .gitignore geralmente na raiz do seu projeto. Abra o arquivo .gitignore em um editor de texto favorito (VS Code, Sublime Text, etc.) para abrir o arquivo .gitignore. Adicione a pasta env_mus à lista de ignorar, inserindo a seguinte linha no arquivo .gitignore:
 ```
 env_mus/
 ```
