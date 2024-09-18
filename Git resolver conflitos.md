@@ -1,4 +1,4 @@
-ADICIONAR PASTA DOS PACOTES AO GITIGNORE
+# Excluir pasta do controle de versão do Git
 Para adicionar a pasta env_mus ao .gitignore, siga estes passos:
 
 Localize o arquivo .gitignore:
@@ -7,13 +7,13 @@ Abra o arquivo .gitignore em um editor de texto:
 Utilize seu editor de texto favorito (VS Code, Sublime Text, etc.) para abrir o arquivo .gitignore.
 Adicione a pasta env_mus:
 Insira a seguinte linha no arquivo .gitignore:
-
 env_mus/
+
 Certifique-se de que não há espaços em branco antes ou depois da barra (/) no final da linha.
 
 Salve o arquivo .gitignore
 
-VERIFICANDO PARA ONDE OS COMMITS ESTÃO APONTANDO:
+# Verificar para onde os commits estão apontando:
 Para enxergar para onde os commits estão apontando no momento, você pode usar o comando git remote -v no seu terminal, dentro da pasta do seu projeto.
 
 Este comando listará todos os repositórios remotos configurados no seu projeto, juntamente com as URLs associadas a eles. A saída geralmente se parece com isso:
@@ -27,7 +27,7 @@ Interpretando a saída:
 Se a URL exibida corresponder à URL do seu novo repositório no GitHub, significa que seus commits estão apontando para o repositório correto.
 Se a URL exibida ainda for a do repositório original DevSkillsHQ/fullstack-boilerplate-flask-react, significa que você ainda não desconectou seu repositório local do repositório original e precisa seguir os passos que descrevi anteriormente para criar um novo repositório e configurar a nova origem remota.
 
-PARA REINICIAR O CONTROLE DE VERSÕES EM UM NOVO REPOSITÓRIO
+# Reiniciar o controle de versão escolhendo um novo repositório
 Para manter as modificações locais, mas eliminar o histórico de pull requests e commits relacionados ao repositório original DevSkillsHQ/fullstack-boilerplate-flask-react, você pode seguir estes passos:
 
 1. Criar um novo repositório no GitHub:
